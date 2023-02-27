@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Drunk Game</title>
+    <%- include('partials/head')%>
+</head>
+
+<body>
+ <!-- make mailto redirect gmail-->
+ <%- include ('partials/navigation') %>
+    <header class="container vh-100 d-flex justify-content-center align-items-center">
+        <div class="d-flex flex-column justify-content-center align-items-center">
+            <img src="/resources/img/drunk.png" alt="" width="200" height="175" class="img-fluid my-2">
+                <div class="card bg-dark text-white text-center ">
+                    <div class="card-header">
+                        <h3> Contactame</h3>
+                    </div>
+                    <div class="card-body text-start">
+                        <form action="mailto:david.rojasramirez@ucr.ac.cr" method="post" enctype="text/plain">
+                            <div class="mb-3">
+                                <label for="email">Email</label>
+                                <input type="email" placeholder="Email" class="form-control">
+                            </div>
+    
+                            <div class="mb-3">
+                                <label for="message">Mensaje</label>
+                                <textarea name="messge" rows="3" class="form-control"
+                                    placeholder="Escribe un mensaje"></textarea>
+                            </div>
+    
+                            <button class="btn btn-light ">
+                                Enviar
+                            </button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </header>
+    </div>
+
+
+       
+        <%- include ('partials/footer') %>
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Drunk Game</title>
+  <%- include('partials/head')%>
+</head>
+
+<body>
+
+  <%- include ('partials/navigation') %>
+
+    <header class="container vh-100 d-flex justify-content-center align-items-center">
+      <div class="d-flex flex-column justify-content-center align-items-center">
+        <img src="/resources/img/drunk.png" alt="" width="200" height="175" class="img-fluid">
+        <h1 class="display- my-2 text-uppercase fw-bold"> ¡Vamos a jugar! </h1>
+        <a href="/players" class="btn btn-dark my-2">Empezar</a>
+
+
+        <% if (typeof alert !="undefined" ) { %>
+          <script>
+            Swal.fire({
+              title: '<%= alertTitle %>',
+              text: '<%= alertMessage %>',
+              icon: '<%= alertIcon %>',
+              showConfirmButton: '<%= showConfirmButton %>',
+              confirmButtonColor: '<%= confirmButtonColor %>',
+              iconColor: '<%= iconColor %>'
+
+            }).then(() => {
+              window.location = '/<%= ruta %>'
+            })
+          </script>
+          <% } %>
+
+    </header>
+
+    </div>
+
+    <%- include ('partials/footer') %>
+</body>
+
+</html>
