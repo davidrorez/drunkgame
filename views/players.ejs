@@ -28,11 +28,9 @@
                 </form>
                 <% if (nameTest.length> 0) { %>
                     <h5>&#128293; <b> Jugadores </b> &#128293;</h5>
-                    <% nameTest.forEach(function(nameTest) {%>
                         <h5>
                             <%= nameTest %>
                         </h5>
-                        <% }) %>
                             <%} %>
                                 <% if (nameTest.length == 6) { %>
                                     <script> Swal.fire('¡Capacidad máxima de jugadores!'); </script>
